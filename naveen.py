@@ -10,3 +10,8 @@ def get_git_user_info():
         print("✅ Current Git user info (local repo):")
         print(f"  Name : {name}")
         print(f"  Email: {email}")
+        except subprocess.CalledProcessError:
+        print("❌ Git user info not found in local config.")
+
+# Run it
+get_git_user_info()
