@@ -8,3 +8,5 @@ def get_git_user_info():
         email = subprocess.check_output(['git', 'config', 'user.email']).decode().strip()
 
         print("✅ Current Git user info (local repo):")
+        print(f"  Name : {name}")
+        print(f"  Email: {email}")
