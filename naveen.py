@@ -15,3 +15,6 @@ def get_git_user_info():
 
 # Run it
 get_git_user_info()
+
+
+output:
